@@ -6,7 +6,11 @@ Provedor de Cloud Computing Simples
 ```r
 API REST - rest-cloud
 
-FRONT-END - rest-cloud-api-client
+FRONT-END - Depois de excutar ao projeto rest-cloud, acessar este endereço:
+
+<b> http://localhost:8080/ </b>
+
+API JAVA - rest-cloud-api-client
 ```
 
 IDE's
