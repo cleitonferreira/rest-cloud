@@ -22,14 +22,14 @@ public class MainContainer {
 			System.out.println("Sistema Operacional: " + container.getSistema_operacional().getDescricao());
 		}
 		
-//		Usuario usuario = new Usuario();
-//		usuario.setNome("Cleiton Ferreira");
-//		usuario.setEmail("teste@gmail.com");
-//		usuario.setSenha("admin");
-//		usuario.setAtivo(true);
+		Usuario usuario = new Usuario();
+		usuario.setNome("Cleiton Ferreira");
+		usuario.setEmail("teste@gmail.com");
+		usuario.setSenha("admin");
+		usuario.setAtivo(true);
 		
-		Usuario usuario = cliente.buscarPorUsuario("http://localhost:8080/usuarios/1");
-		System.out.println(usuario.getNome());
+//		Usuario usuario = cliente.buscarPorUsuario("http://localhost:8080/usuarios/1");
+//		System.out.println(usuario.getNome());
 		
 		Container container = new Container();
 		container.setComando(Comando.CRIAR);
@@ -43,8 +43,9 @@ public class MainContainer {
 		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 		container.setData_criacao(format.parse("01/01/2016"));
 		
+		
 		container.setUsuario(usuario);
-				
+		
 
 		
 		String localizacao = cliente.salvar(container);

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>AngularJS - REST Usuarios</title>
+<!-- Load AngularJS 1.5.9 -->
+<script src="js/lib/angular.min.js"></script>
+<script src="js/usuarioJS.js"></script>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<style>
+.button {
+	cursor: pointer;
+	color: blue;
+}
+
+td, th {
+	border: 1px solid gray;
+	width: 25%;
+	text-align: left;
+}
+
+table {
+	width: 600px;
+}
+
+.bs-example {
+	margin: 20px;
+}
+</style>
+<head>
+<body ng-app="UserManagement" ng-controller="UserManagementController">
+
+
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-6">
+		
+			<h2>Add/Edit Usuário</h2>
+
+			<form ng-submit="submitUsuario()">
+
+				<div class="form-group">
+					<label for="exampleInputPassword1">Nome</label> <input type="text"
+						class="form-control" id="exampleNome" placeholder="Password" required
+						ng-model="form.nome">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email</label> <input type="email"
+						class="form-control" id="exampleInputEmail1" placeholder="Email" required
+						ng-model="form.email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Senha</label> <input
+						type="password" class="form-control" id="exampleInputPassword1"
+						placeholder="Password" required ng-model="form.senha">
+				</div>
+
+		
+				<button type="submit" class="btn btn-primary">Submit</button>
+
+			</form>
+
+
+			<div class="bs-example">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Email</th>
+							<th>Senha</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="usuario in usuarios">
+							<td>{{ usuario.nome }}</td>
+							<td>{{ usuario.email }}</td>
+							<td>{{ usuario.senha }}</td>
+							<td><a ng-click="editUsuario( usuario )" class="button">Edit</a>
+								| <a ng-click="removeUsuario( usuario )" class="button">Remove</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+
+
+
+
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>
+
