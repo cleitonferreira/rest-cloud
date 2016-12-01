@@ -8,7 +8,7 @@ API REST - rest-cloud
 
 FRONT-END - Depois de excutar ao projeto rest-cloud, acessar este endereço:
 
-<b> http://localhost:8080/ </b>
+**http://localhost:8080/**
 
 API JAVA - rest-cloud-api-client
 ```
@@ -45,6 +45,19 @@ Ao usar o Eclipse, eu recomendo simplesmente importar o projeto através do
 File-> Import-> Existing Maven Projects. 
 Selecione o diretório
 correspondente a esta solução.
+
+
+Modelagem
+================
+
+**Conceitual**
+
+![Conceitual](modelagem/conceitual.png?raw=true)
+
+**Relacional**
+
+![Relacional](modelagem/relacional.png?raw=true)
+
 
 Dúvidas Sobre o Projeto
 ================
