@@ -6,9 +6,7 @@ Provedor de Cloud Computing Simples
 ```r
 API REST - rest-cloud
 
-FRONT-END - Depois de excutar ao projeto rest-cloud, acessar este endereço:
-
-**http://localhost:8080/**
+FRONT-END - Depois de excutar ao projeto rest-cloud, acessar este endereço: http://localhost:8080/
 
 API JAVA - rest-cloud-api-client
 ```
@@ -21,7 +19,7 @@ O projeto foi desenvolvido no [Eclipse](https://eclipse.org) mas roda em qualque
 Como Baixar Este Projeto
 ================
 
-Você pode executar o comando abaixo no terminal ou caso preferir apenas [baixar o arquivo zip aqui](https://github.com/cleitonferreira/Materialized/archive/master.zip) e importar na sua IDE favorita.
+Você pode executar o comando abaixo no terminal ou caso preferir apenas [baixar o arquivo zip aqui](https://github.com/cleitonferreira/test_rest/archive/master.zip) e importar na sua IDE favorita.
 
 ```sh
 git clone https://github.com/cleitonferreira/test_rest.git
