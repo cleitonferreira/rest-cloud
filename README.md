@@ -6,7 +6,9 @@ Provedor de Cloud Computing Simples
 ```r
 API REST - rest-cloud
 
-FRONT-END - Depois de excutar ao projeto rest-cloud, acessar este endereço: http://localhost:8080/
+FRONT-END - AngularJS e Bootstrap
+
+Depois de excutar ao projeto rest-cloud, acessar este endereço: http://localhost:8080/
 
 API JAVA - rest-cloud-api-client
 ```
